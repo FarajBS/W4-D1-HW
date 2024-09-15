@@ -43,6 +43,9 @@ header .contheader img {
         display: grid;
         grid-template-columns: auto auto;
     }
+    header .contheader img {
+        width: 35vw;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -53,5 +56,8 @@ header .contheader img {
         align-items: center;
         flex-direction: column;
         grid-template-columns: auto;
+    }
+    header .contheader img {
+        width: 40vw;
     }
 }
