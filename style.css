@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header .contheader{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .contheader img {
+    width: 25vw;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#main img {
+    width: 95%;
+    height: 95%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+#main img:hover {
+    opacity: 1;
+}
+
+/* ================================================================================================================ */
+
+/* media Query */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-template-columns: auto;
+    }
+}
