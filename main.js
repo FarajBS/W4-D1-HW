@@ -9,6 +9,11 @@ const resCodes = [
     503, 504, 506, 507, 508, 509, 510, 511, 521, 522, 523, 525, 530, 599,
 ];
 
+// Test URL //
+fetch(url)
+.then(response => console.log(response));
+//=== Test URL ===//
+
 let cats = resCodes.map(item => {
     let img = document.createElement("img");
     img.src = url + item + ".jpg" 
