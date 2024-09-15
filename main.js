@@ -9,15 +9,9 @@ const resCodes = [
     503, 504, 506, 507, 508, 509, 510, 511, 521, 522, 523, 525, 530, 599,
 ];
 
-fetch(url)
-.then(response => console.log(response))
-.then((data) => {
-    // console.log(url + "/103.jpg");
+let cats = resCodes.map(item => {
+    let img = document.createElement("img");
+    img.src = url + item + ".jpg" 
 
-    let cats = resCodes.map(item => {
-        let img = document.createElement("img");
-        img.src = url + item + ".jpg" 
-
-        mainContainer.appendChild(img);
-    });
+    mainContainer.appendChild(img);
 });
